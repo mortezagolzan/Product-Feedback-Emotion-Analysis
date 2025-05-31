@@ -42,7 +42,7 @@ Request body:
 {
     "texts": [
         "I'm absolutely delighted with this purchase!",
-        "This product is absolutely disgusting.",
+        "I'm really disappointed with this product.",
         "I'm worried about the safety of this product."
     ]
 }
@@ -55,39 +55,36 @@ Response:
         {
             "text": "I'm absolutely delighted with this purchase!",
             "emotions": {
-                "anger": 0.01,
-                "disgust": 0.01,
-                "fear": 0.01,
+                "sadness": 0.01,
                 "joy": 0.85,
-                "neutral": 0.05,
-                "sadness": 0.02,
-                "surprise": 0.05
+                "love": 0.10,
+                "anger": 0.01,
+                "fear": 0.01,
+                "surprise": 0.02
             },
             "dominant_emotion": "joy"
         },
         {
-            "text": "This product is absolutely disgusting.",
+            "text": "I'm really disappointed with this product.",
             "emotions": {
-                "anger": 0.15,
-                "disgust": 0.75,
-                "fear": 0.02,
+                "sadness": 0.75,
                 "joy": 0.01,
-                "neutral": 0.02,
-                "sadness": 0.03,
-                "surprise": 0.02
+                "love": 0.01,
+                "anger": 0.15,
+                "fear": 0.02,
+                "surprise": 0.06
             },
-            "dominant_emotion": "disgust"
+            "dominant_emotion": "sadness"
         },
         {
             "text": "I'm worried about the safety of this product.",
             "emotions": {
-                "anger": 0.05,
-                "disgust": 0.02,
-                "fear": 0.80,
-                "joy": 0.01,
-                "neutral": 0.05,
                 "sadness": 0.05,
-                "surprise": 0.02
+                "joy": 0.01,
+                "love": 0.01,
+                "anger": 0.05,
+                "fear": 0.85,
+                "surprise": 0.03
             },
             "dominant_emotion": "fear"
         }
@@ -112,7 +109,7 @@ The script shows:
 - How to make parallel requests using ThreadPoolExecutor
 - Performance metrics for parallel processing
 - Detailed emotion analysis results for each feedback
-- Examples of all 7 emotions in product feedback
+- Examples of all 6 emotions in product feedback
 
 ## Architecture
 
