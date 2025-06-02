@@ -100,12 +100,9 @@ Health check endpoint that returns the status of the service.
 The included `demo.py` script demonstrates how to make parallel requests to the API. To run it:
 
 1. Make sure the Docker container is running
-2. Run the script:
-```bash
-python demo.py
-```
+2. Open demo.ipynb file and run the cells.
 
-The script shows:
+The scripts inside the notebook shows:
 - How to make parallel requests using ThreadPoolExecutor
 - Performance metrics for parallel processing
 - Detailed emotion analysis results for each feedback
